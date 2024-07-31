@@ -34,7 +34,6 @@ def string_token_count(str):
     """Calculate and return the token count in a given string."""
     start_time = time.time()
     tiktoken_encoding = init_tiktoken()
-    logger.info(f"加载titoken: {time.time()
     logger.info(f"加载titoken: {time.time() - start_time}")
     tokens = tiktoken_encoding.encode(str)
     return len(tokens)
